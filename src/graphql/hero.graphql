@@ -1,0 +1,17 @@
+#import "./heroFragment.graphql"
+
+
+
+query ExampleQuery {
+  company {
+    ceo
+    coo
+    cto
+  }
+ 
+  histories{
+    ...COMMx
+    event_date_unix
+    id
+  }
+}
